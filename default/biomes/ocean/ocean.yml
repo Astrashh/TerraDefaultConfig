@@ -1,7 +1,8 @@
 type: BIOME
-extends: "OCEAN_ABSTRACT"
-id: "OCEAN"
+
+id: OCEAN
+extends: OCEAN_ABSTRACT
 vanilla: OCEAN
 color: 0x000070
 tags:
-  - "OCEAN"
+  - OCEAN

@@ -1,8 +1,9 @@
 type: BIOME
-extends: "DEEP_OCEAN_ABSTRACT"
-id: "OCEAN_DEEP"
+
+id: OCEAN_DEEP
+extends: DEEP_OCEAN_ABSTRACT
 vanilla: OCEAN
-tags:
-  - "OCEAN"
-  - "OCEAN_DEEP"
 color: 0x000030
+tags:
+  - OCEAN
+  - OCEAN_DEEP

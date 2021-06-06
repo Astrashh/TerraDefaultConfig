@@ -1,26 +1,26 @@
 type: BIOME
-id: MOUNTAINS_PRETTY_FLORA
 abstract: true
+
+id: MOUNTAINS_PRETTY_FLORA
 extends: BASIC_ORES
+
 flora:
-  - density: 100
+  -
+    items:
+      - BLANK: 7
+      - LEAVES: 3
+    density: 100
     distribution:
       type: OpenSimplex2
       frequency: 0.075
       fractal:
         type: FBm
         octaves: 1
-    items:
-      - BLANK: 7
-      - LEAVES: 3
-    y:
-      min: 62
-      max: 180
-  - density: 50
+    y: { min: 62, max: 180 }
+  -
     items:
       - TALL_GRASS: 3
       - GRASS: 7
       - SMALL_ROCK: 1
-    y:
-      min: 62
-      max: 180
+    density: 50
+    y: { min: 62, max: 180 }

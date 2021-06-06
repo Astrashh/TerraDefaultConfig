@@ -2,8 +2,8 @@ type: BIOME
 
 id: PLAINS
 extends: PLAINS_ABSTRACT
-color: 0x8db360
 vanilla: PLAINS
+color: 0x8db360
 tags:
   - LAND
   - RIVER_ERODE

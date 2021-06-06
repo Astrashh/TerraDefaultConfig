@@ -1,13 +1,15 @@
 type: BIOME
-extends: "BEACH_ABSTRACT"
-id: "MUSHROOM_BEACH"
+
+id: MUSHROOM_BEACH
+extends: BEACH_ABSTRACT
 vanilla: MUSHROOM_FIELD_SHORE
 color: 0xa000ff
+
 palette:
-  - "BLOCK:minecraft:bedrock": 0
-  - BEDROCK_MOST: 1
-  - BEDROCK_HALF: 2
-  - BEDROCK_LITTLE: 3
-  - SANDY: 62
-  - MYCELIUM_SHORE: 64
   - MYCELIUM: 255
+  - MYCELIUM_SHORE: 64
+  - SANDY: 62
+  - BEDROCK_LITTLE: 3
+  - BEDROCK_HALF: 2
+  - BEDROCK_MOST: 1
+  - "BLOCK:minecraft:bedrock": 0

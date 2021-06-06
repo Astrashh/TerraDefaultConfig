@@ -1,38 +1,50 @@
 type: BIOME
-extends: "PLAINS_ABSTRACT"
-id: "BAMBOO_JUNGLE"
+
+id: BAMBOO_JUNGLE
+extends: PLAINS_ABSTRACT
+vanilla: BAMBOO_JUNGLE
+color: 0x768E14
+tags:
+  - LAND
+  - HOT
+  - WET
+  - RIVER_ERODE
+
+palette:
+  - BAMBOO_JUNGLE: 255
+  - RIVER_SHORE: 62
+  - RIVER_BOTTOM: 61
+  - BEDROCK_LITTLE: 3
+  - BEDROCK_HALF: 2
+  - BEDROCK_MOST: 1
+  - "BLOCK:minecraft:bedrock": 0
+
 structures:
   - JUNGLE
   - STRONGHOLD
   - MINESHAFT
   - DUNGEON
 
-palette:
-  - "BLOCK:minecraft:bedrock": 0
-  - BEDROCK_MOST: 1
-  - BEDROCK_HALF: 2
-  - BEDROCK_LITTLE: 3
-  - RIVER_BOTTOM: 61
-  - RIVER_SHORE: 62
-  - BAMBOO_JUNGLE: 255
-vanilla: BAMBOO_JUNGLE
-tags:
-  - "LAND"
-  - "HOT"
-  - "WET"
-  - "RIVER_ERODE"
+trees:
+  -
+    items:
+      - JUNGLE_BUSH: 16
+      - SMALL_JUNGLE: 16
+      - JUNGLE: 16
+      - BAMBOO: 400
+    density: 50
+    y: { min: 62, max: 92 }
 
 flora:
-  - density: 40
-    y:
-      min: 62
-      max: 84
+  -
     items:
       - TALL_GRASS: 150
       - GRASS: 750
       - ROSE_BUSH: 4
       - LILAC: 4
-  - density: 12
+    density: 40
+    y: { min: 62, max: 84 }
+  -
     items:
       - CEILING_LEAVES: 2
       - VINES: 2
@@ -40,33 +52,20 @@ flora:
       - STALACTITE: 1
       - STALAGMITE: 1
       - SHROOMLIGHT: 2
-    y:
-      min: 15
-      max: 62
-  - density: 10
+    density: 12
+    y: { min: 15, max: 62 }
+  -
     items:
       - CEILING_LEAVES: 6
       - STALACTITE: 1
       - SHROOMLIGHT: 2
-    y:
-      min: 63
-      max: 84
-  - density: 5
+    density: 10
+    y: { min: 63, max: 84 }
+  -
     items:
       - STALACTITE: 1
       - STALAGMITE: 2
       - SHROOMLIGHT: 1
-    y:
-      min: 8
-      max: 14
+    density: 5
+    y: { min: 8, max: 14 }
 
-trees:
-  - density: 50
-    items:
-      - JUNGLE_BUSH: 16
-      - SMALL_JUNGLE: 16
-      - JUNGLE: 16
-      - BAMBOO: 400
-    y:
-      min: 62
-      max: 92

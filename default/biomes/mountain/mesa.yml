@@ -1,27 +1,22 @@
 type: BIOME
-noise-equation: "((-((y / base)^2)) + 1) + |(noise2(x/1.5, z/1.5)+0.25)|/3"
 
+id: MESA
+extends: BASIC_ORES
+vanilla: BADLANDS
+color: 0xd94515
+tags:
+  - LAND
+  - HOT
+  - DRY
+
+noise-equation: "((-((y / base)^2)) + 1) + |(noise2(x/1.5, z/1.5)+0.25)|/3"
 elevation:
   equation: "min(floor(((max(noise2(x/1.5, z/1.5)+0.25, 0)))*5), 3)*0.45 + if(max(noise2(x/1.5, z/1.5)+0.05, 0), (noise2(x*2,z*2))*0.55, 0)"
   interpolation: true
-extends: "BASIC_ORES"
-id: "MESA"
-erode: MESA
-color: 0xd94515
-structures:
-  - MINESHAFT_MESA
-  - STRONGHOLD
-tags:
-  - "LAND"
-  - "HOT"
-  - "DRY"
+
 slant:
   - threshold: 0.15
     palette:
-      - "BLOCK:minecraft:bedrock": 0
-      - BEDROCK_MOST: 1
-      - BEDROCK_HALF: 2
-      - BEDROCK_LITTLE: 3
       - "BLOCK:minecraft:terracotta": 255
       - "BLOCK:minecraft:gray_terracotta": 124
       - "BLOCK:minecraft:cyan_terracotta": 121
@@ -57,28 +52,33 @@ slant:
       - "BLOCK:minecraft:terracotta": 71
       - "BLOCK:minecraft:terracotta": 70
       - "BLOCK:minecraft:orange_terracotta": 66
-      - "RED_DESERT": 64
+      - RED_DESERT: 64
+      - BEDROCK_LITTLE: 3
+      - BEDROCK_HALF: 2
+      - BEDROCK_MOST: 1
+      - "BLOCK:minecraft:bedrock": 0
 
 palette:
-  - "BLOCK:minecraft:bedrock": 0
-  - BEDROCK_MOST: 1
-  - BEDROCK_HALF: 2
-  - BEDROCK_LITTLE: 3
   - RED_DESERT: 255
-vanilla: BADLANDS
+  - BEDROCK_LITTLE: 3
+  - BEDROCK_HALF: 2
+  - BEDROCK_MOST: 1
+  - "BLOCK:minecraft:bedrock": 0
+
+structures:
+  - MINESHAFT_MESA
+  - STRONGHOLD
+
+trees:
+  - 
+    items: CACTUS
+    density: 1.5
+    y: { min: 58, max: 128 }
 
 flora:
-  - density: 2
-    y:
-      min: 62
-      max: 128
+  -
     items:
       - DEAD_BUSH: 1
       - SMALL_ROCK: 1
-trees:
-  - density: 1.5
-    items:
-      - CACTUS: 1
-    y:
-      min: 58
-      max: 128
+    density: 2
+    y: { min: 62, max: 128 }

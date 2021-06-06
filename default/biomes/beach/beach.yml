@@ -1,5 +1,6 @@
 type: BIOME
-extends: "BEACH_ABSTRACT"
-id: "BEACH"
+
+id: BEACH
+extends: BEACH_ABSTRACT
 vanilla: BEACH
 color: 0xfade55

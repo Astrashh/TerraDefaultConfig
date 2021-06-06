@@ -1,17 +1,20 @@
 type: BIOME
-extends: "OCEAN_ABSTRACT"
-id: "COLD_OCEAN"
+
+id: COLD_OCEAN
+extends: OCEAN_ABSTRACT
 vanilla: COLD_OCEAN
 color: 0x202070
+tags:
+  - OCEAN
+  - COLD_OCEAN
+
 palette:
-  - "BLOCK:minecraft:bedrock": 0
-  - BEDROCK_MOST: 1
-  - BEDROCK_HALF: 2
-  - BEDROCK_LITTLE: 3
   - TUNDRA: 255
   - OCEANFLOOR: 60
+  - BEDROCK_LITTLE: 3
+  - BEDROCK_HALF: 2
+  - BEDROCK_MOST: 1
+  - "BLOCK:minecraft:bedrock": 0
+
 ocean:
   level: 62
-tags:
-  - "OCEAN"
-  - "COLD_OCEAN"

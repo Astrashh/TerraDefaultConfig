@@ -1,18 +1,21 @@
 type: BIOME
-noise-equation: "((-((y / base)^2)) + 1) + (noise2(x, z)/5)"
-color: 0xfade55
-id: "BEACH_ABSTRACT"
-tags:
-  - "RIVER_ERODE"
-  - "BEACH"
 abstract: true
+
 extends: BASIC_ORES
+id: BEACH_ABSTRACT
+color: 0xfade55
+tags:
+  - RIVER_ERODE
+  - BEACH
+
+noise-equation: "((-((y / base)^2)) + 1) + (noise2(x, z)/5)"
+
 carving: {}
+
 palette:
-  - "BLOCK:minecraft:bedrock": 0
-  - BEDROCK_MOST: 1
-  - BEDROCK_HALF: 2
-  - BEDROCK_LITTLE: 3
-  - SANDY: 64
   - GRASSY: 255
-erode: RIVER
+  - SANDY: 64
+  - BEDROCK_LITTLE: 3
+  - BEDROCK_HALF: 2
+  - BEDROCK_MOST: 1
+  - "BLOCK:minecraft:bedrock": 0

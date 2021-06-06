@@ -1,8 +1,13 @@
 type: BIOME
-extends: "DEEP_OCEAN_ABSTRACT"
-id: "LUKEWARM_OCEAN_DEEP"
+
+id: LUKEWARM_OCEAN_DEEP
+extends: DEEP_OCEAN_ABSTRACT
 vanilla: LUKEWARM_OCEAN
 color: 0x000040
+tags:
+  - OCEAN
+  - OCEAN_DEEP
+
 palette:
   - "BLOCK:minecraft:bedrock": 0
   - BEDROCK_MOST: 1
@@ -10,18 +15,14 @@ palette:
   - BEDROCK_LITTLE: 3
   - SANDY: 255
   - OCEANFLOOR: 60
+
 flora:
-  - density: 50
-    y:
-      min: 30
-      max: 62
-    simplex-frequency: 0.05
+  -
     items:
       - TALL_SEAGRASS: 1
       - SEAGRASS: 3
       - KELP_SHORT: 5
       - KELP_MEDIUM: 5
       - KELP_TALL: 5
-tags:
-  - "OCEAN"
-  - "OCEAN_DEEP"
+    density: 50
+    y: { min: 30, max: 62 }

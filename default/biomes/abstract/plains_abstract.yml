@@ -1,14 +1,13 @@
 type: BIOME
-noise-equation: "((-((y / base)^2)) + 1) + |(noise2(x, z) / 3) + 0.1|"
-id: "PLAINS_ABSTRACT"
 abstract: true
+
+id: PLAINS_ABSTRACT
 extends: BASIC_ORES
-erode: RIVER
+
+noise-equation: "((-((y / base)^2)) + 1) + |(noise2(x, z) / 3) + 0.1|"
+
 structures:
   - STRONGHOLD
   - DUNGEON
   - MINESHAFT
   - RUINED_PORTAL
-noise-2d:
-  enable: true
-  base: 64

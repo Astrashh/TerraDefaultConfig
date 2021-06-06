@@ -1,33 +1,33 @@
 type: BIOME
-extends: "PLAINS_ABSTRACT"
-id: "SAVANNA"
-color: 0xbdb25f
-palette:
-  - "BLOCK:minecraft:bedrock": 0
-  - BEDROCK_MOST: 1
-  - BEDROCK_HALF: 2
-  - BEDROCK_LITTLE: 3
-  - RIVER_BOTTOM: 61
-  - RIVER_SHORE: 62
-  - GRASSY: 255
+
+id: SAVANNA
+extends: PLAINS_ABSTRACT
 vanilla: SAVANNA
+color: 0xbdb25f
 tags:
-  - "LAND"
-  - "DRY"
-  - "RIVER_ERODE"
+  - LAND
+  - DRY
+  - RIVER_ERODE
+
+palette:
+  - GRASSY: 255
+  - RIVER_SHORE: 62
+  - RIVER_BOTTOM: 61
+  - BEDROCK_LITTLE: 3
+  - BEDROCK_HALF: 2
+  - BEDROCK_MOST: 1
+  - "BLOCK:minecraft:bedrock": 0
+
+trees:
+  -
+    items: ACACIA
+    density: 4
+    y: { min: 62, max: 128 }
+
 flora:
-  - density: 40
-    y:
-      min: 62
-      max: 84
+  -
     items:
       - TALL_GRASS: 15
       - GRASS: 70
-
-trees:
-  - density: 4
-    items:
-      ACACIA: 1
-    y:
-      min: 62
-      max: 128
+    density: 40
+    y: { min: 62, max: 84 }

@@ -1,21 +1,23 @@
 type: BIOME
-extends: "MOUNTAINS_PRETTY"
-id: "MOUNTAINS_JUNGLE"
-erode: RIVER_M_J
-color: 0x2c4205
-palette:
-  - "BLOCK:minecraft:bedrock": 0
-  - BEDROCK_MOST: 1
-  - BEDROCK_HALF: 2
-  - BEDROCK_LITTLE: 3
-  - RIVER_BOTTOM: 61
-  - RIVER_SHORE: 62
-  - MOUNTAIN_JUNGLE: 255
+
+id: MOUNTAINS_JUNGLE
+extends: MOUNTAINS_PRETTY
 vanilla: JUNGLE
+color: 0x2c4205
 tags:
-  - "LAND"
-  - "HOT"
-  - "WET"
+  - LAND
+  - HOT
+  - WET
+
+palette:
+  - MOUNTAIN_JUNGLE: 255
+  - RIVER_SHORE: 62
+  - RIVER_BOTTOM: 61
+  - BEDROCK_LITTLE: 3
+  - BEDROCK_HALF: 2
+  - BEDROCK_MOST: 1
+  - "BLOCK:minecraft:bedrock": 0
+
 trees:
   - density: 10
     items:
@@ -26,29 +28,28 @@ trees:
     y:
       min: 62
       max: 84
+
 flora:
-  - density: 100
+  -
+    items:
+      - BLANK: 7
+      - LEAVES: 3
+    density: 100
     distribution:
       type: OpenSimplex2
       frequency: 0.075
       fractal:
         type: FBm
         octaves: 1
-    items:
-      - BLANK: 7
-      - LEAVES: 3
-    y:
-      min: 62
-      max: 180
-  - density: 50
+    y: { min: 62, max: 180 }
+  -
     items:
       - TALL_GRASS: 3
       - GRASS: 7
       - SMALL_ROCK: 1
-    y:
-      min: 62
-      max: 180
-  - density: 14
+    density: 50
+    y: { min: 62, max: 180 }
+  -
     items:
       - CEILING_LEAVES: 2
       - VINES: 2
@@ -56,24 +57,21 @@ flora:
       - STALACTITE: 1
       - STALAGMITE: 1
       - SHROOMLIGHT: 2
-    y:
-      min: 15
-      max: 62
-  - density: 7
+    density: 14
+    y: { min: 15, max: 62 }
+  -
     items:
       - STALACTITE: 1
       - STALAGMITE: 2
       - SHROOMLIGHT: 1
-    y:
-      min: 8
-      max: 14
-  - density: 12
+    density: 7
+    y: { min: 8, max: 14 }
+  -
     items:
       - CEILING_LEAVES: 2
       - VINES: 2
       - VINES_TALL: 1
       - STALACTITE: 1
       - SHROOMLIGHT: 2
-    y:
-      min: 63
-      max: 96
+    density: 12
+    y: { min: 63, max: 96 }

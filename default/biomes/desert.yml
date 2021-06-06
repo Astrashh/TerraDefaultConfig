@@ -1,6 +1,7 @@
 type: BIOME
-extends: PLAINS_ABSTRACT
+
 id: DESERT
+extends: PLAINS_ABSTRACT
 vanilla: DESERT
 color: 0xfa9418
 tags:
