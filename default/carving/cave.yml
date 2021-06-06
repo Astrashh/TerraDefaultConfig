@@ -1,6 +1,8 @@
 type: CARVER
+
 id: CAVE
 extends: CAVE_ABSTRACT
+
 palette:
   inner:
     replace-blacklist: true

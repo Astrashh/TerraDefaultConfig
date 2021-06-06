@@ -1,6 +1,8 @@
 type: CARVER
-id: "CAVE_SWAMP"
+
+id: CAVE_SWAMP
 extends: CAVE_ABSTRACT
+
 palette:
   inner:
     replace-blacklist: true
