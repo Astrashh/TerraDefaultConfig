@@ -1,7 +1,6 @@
 type: ORE
-material: "minecraft:coal_ore"
-size:
-  min: 17
-  max: 17
+
+id: COAL_ORE
 extends: MINERAL
-id: "COAL_ORE"
+material: "minecraft:coal_ore"
+size: { min: 17, max: 17 }

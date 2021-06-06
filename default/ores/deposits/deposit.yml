@@ -1,9 +1,10 @@
 type: ORE
 abstract: true
+
 id: DEPOSIT
+
+algorithm: VANILLA
+size: { min: 32, max: 32 }
+
 replace:
   - "minecraft:stone"
-size:
-  min: 32
-  max: 32
-algorithm: VANILLA

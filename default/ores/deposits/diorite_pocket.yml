@@ -1,4 +1,5 @@
 type: ORE
-material: "minecraft:diorite"
+
+id: DIORITE
 extends: DEPOSIT
-id: "DIORITE"
+material: "minecraft:diorite"

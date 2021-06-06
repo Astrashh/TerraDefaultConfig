@@ -1,4 +1,5 @@
 type: ORE
-material: "minecraft:andesite"
+
+id: ANDESITE
 extends: DEPOSIT
-id: "ANDESITE"
+material: "minecraft:andesite"

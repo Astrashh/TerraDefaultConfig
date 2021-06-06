@@ -1,6 +1,8 @@
 type: ORE
 abstract: true
+
 id: MINERAL
+algorithm: VANILLA
+
 replace:
   - "minecraft:stone"
-algorithm: VANILLA

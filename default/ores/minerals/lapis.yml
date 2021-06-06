@@ -1,7 +1,6 @@
 type: ORE
-material: "minecraft:lapis_ore"
-size:
-  min: 7
-  max: 7
+
+id: LAPIS_ORE
 extends: MINERAL
-id: "LAPIS_ORE"
+material: "minecraft:lapis_ore"
+size: { min: 7, max: 7 }

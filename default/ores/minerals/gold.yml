@@ -1,7 +1,6 @@
 type: ORE
-material: "minecraft:gold_ore"
-size:
-  min: 9
-  max: 9
+
+id: GOLD_ORE
 extends: MINERAL
-id: "GOLD_ORE"
+material: "minecraft:gold_ore"
+size: { min: 9, max: 9 }

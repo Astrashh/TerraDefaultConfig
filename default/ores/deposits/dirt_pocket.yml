@@ -1,4 +1,5 @@
 type: ORE
-material: "minecraft:dirt"
+
+id: DIRT
 extends: DEPOSIT
-id: "DIRT"
+material: "minecraft:dirt"

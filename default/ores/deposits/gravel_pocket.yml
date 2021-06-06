@@ -1,4 +1,5 @@
 type: ORE
-material: "minecraft:gravel"
+
+id: GRAVEL
 extends: DEPOSIT
-id: "GRAVEL"
+material: "minecraft:gravel"
