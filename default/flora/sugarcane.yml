@@ -1,18 +1,24 @@
 type: FLORA
+
+id: SUGARCANE
+
 layers:
-  - materials:
+  -
+    layers: 1
+    materials:
       - "minecraft:sugar_cane": 1
       - "minecraft:air": 1
-    layers: 1
-  - materials:
-      - "minecraft:sugar_cane": 1
+  -
     layers: 2
-id: "SUGARCANE"
+    materials: "minecraft:sugar_cane"
+
+replaceable:
+  - "minecraft:air"
+
 spawnable:
   - "minecraft:sand"
   - "minecraft:red_sand"
   - "minecraft:grass_block"
-replaceable:
-  - "minecraft:air"
+
 irrigable:
   - "minecraft:water"

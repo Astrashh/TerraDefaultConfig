@@ -1,14 +1,19 @@
 type: FLORA
+
+id: GRAVEL_PLACER
+
 layers:
-  - materials:
-      - "minecraft:gravel": 1
+  -
     layers: 1
-id: "GRAVEL_PLACER"
+    materials: "minecraft:gravel"
+
+replaceable:
+  - "minecraft:diorite"
+
 spawnable:
   - "minecraft:diorite"
   - "yellow_terracotta"
-replaceable:
-  - "minecraft:diorite"
+
 irrigable-offset: 1
 irrigable:
   - "minecraft:red_sand"

@@ -1,18 +1,21 @@
 type: FLORA
-layers:
-  - materials:
-      - "minecraft:kelp": 1
-    layers: 1
-  - materials:
-      - "minecraft:kelp_plant": 1
-    layers: 3
 
-id: "KELP_SHORT"
+id: KELP_SHORT
+
+layers:
+  -
+    layers: 1
+    materials: "minecraft:kelp"
+  -
+    layers: 3
+    materials: "minecraft:kelp_plant"
+
+replaceable:
+  - "minecraft:water"
+
 spawnable:
   - "minecraft:sand"
   - "minecraft:stone"
   - "minecraft:red_sand"
   - "minecraft:gravel"
   - "minecraft:dirt"
-replaceable:
-  - "minecraft:water"

@@ -1,19 +1,24 @@
 type: FLORA
+
+id: STALACTITE
+ceiling: true
+
 layers:
-  - materials:
-      - "minecraft:cobblestone_wall": 1
+  -
     layers: 1
-  - materials:
+    materials: "minecraft:cobblestone_wall"
+  -
+    layers: 1
+    materials:
       - "minecraft:iron_bars": 1
       - "minecraft:cobblestone_wall": 1
+  -
     layers: 1
-  - materials:
-      - "minecraft:iron_bars": 1
-    layers: 1
-id: "STALACTITE"
+    materials: "minecraft:iron_bars"
+
 spawnable:
   - "minecraft:stone"
   - "minecraft:cobblestone"
+
 replaceable:
   - "minecraft:air"
-ceiling: true

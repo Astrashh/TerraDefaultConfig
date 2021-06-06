@@ -1,19 +1,23 @@
 type: FLORA
-layers:
-  - materials:
-      - "minecraft:iron_bars": 1
-    layers: 1
-  - materials:
-      - "minecraft:iron_bars": 1
-      - "minecraft:cobblestone_wall": 1
-    layers: 1
-  - materials:
-      - "minecraft:cobblestone_wall": 1
-    layers: 1
 
-id: "STALAGMITE"
+id: STALAGMITE
+ceiling: false
+
+layers:
+  -
+    layers: 1
+    materials: "minecraft:iron_bars"
+  -
+    layers: 1
+    materials:
+      - "minecraft:iron_bars": 1
+      - "minecraft:cobblestone_wall": 1
+  -
+    layers: 1
+    materials: "minecraft:cobblestone_wall"
+
 spawnable:
   - "minecraft:stone"
+
 replaceable:
   - "minecraft:air"
-ceiling: false

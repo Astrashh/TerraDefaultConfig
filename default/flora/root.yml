@@ -1,24 +1,29 @@
 type: FLORA
+
+id: ROOT
+
 layers:
-  - materials:
+  -
+    layers: 1
+    materials:
       - "minecraft:spruce_fence": 1
       - "minecraft:air": 2
+  -
     layers: 1
-  - materials:
-      - "minecraft:spruce_fence": 1
+    materials: "minecraft:spruce_fence"
+  -
     layers: 1
-  - materials:
+    materials:
       - "minecraft:spruce_fence": 1
       - "minecraft:oak_log": 2
+  -
     layers: 1
-  - materials:
-      - "minecraft:oak_log": 1
-    layers: 1
+    materials: "minecraft:oak_log"
 
-id: "ROOT"
+replaceable:
+  - "minecraft:air"
+
 spawnable:
   - "minecraft:grass_block"
   - "minecraft:coarse_dirt"
   - "minecraft:dirt"
-replaceable:
-  - "minecraft:air"

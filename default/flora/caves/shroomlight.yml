@@ -1,15 +1,15 @@
 type: FLORA
+
+id: SHROOMLIGHT
+physics: true # To update lighting
+
 layers:
-  - materials:
-      - "minecraft:shroomlight": 1
+  -
     layers: 1
-id: "SHROOMLIGHT"
+    materials: "minecraft:shroomlight"
+
 spawnable:
   - "minecraft:air"
-
-
-# To update lighting
-physics: true
 
 replaceable:
   - "minecraft:stone"

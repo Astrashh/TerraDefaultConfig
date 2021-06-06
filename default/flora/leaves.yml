@@ -1,9 +1,15 @@
 type: FLORA
+
+id: LEAVES
+
 layers:
-  - materials:
-      - "minecraft:oak_leaves[persistent=true]": 1
+  -
     layers: 1
-id: "LEAVES"
+    materials: "minecraft:oak_leaves[persistent=true]"
+
+replaceable:
+  - "minecraft:air"
+
 spawnable:
   - "minecraft:stone"
   - "minecraft:sand"
@@ -12,5 +18,3 @@ spawnable:
   - "minecraft:dirt"
   - "minecraft:coarse_dirt"
   - "minecraft:grass_block"
-replaceable:
-  - "minecraft:air"
